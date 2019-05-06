@@ -48,11 +48,11 @@ JLabel h;
 	
 		// 11. Print "clicked!" to the console when the mouse is pressed
 		System.out.println("Clicked!");
-		// 12. remove everything from the frame that was added earlier
+		// 12. remove everything from the frame that was added earlier// reaseach on this aspect of coding.
 		// 13. load a new image like before (this is more than one line of code)\
 		
 		// 14. pack the frame
-		ill.pack();
+		
 	}
 
 	// [OPTIONAL] 15. goad your users with some annoying or witty pop-ups
