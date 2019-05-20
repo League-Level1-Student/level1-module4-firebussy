@@ -8,7 +8,5 @@ package book_of_illusions;
 public class BookOfIllusionsRunner {
 	public static void main(String[] args)  {
 		new BookOfIllusions().run();
-		
 	}
-	
 }

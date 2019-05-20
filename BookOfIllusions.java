@@ -19,40 +19,42 @@ import javax.swing.JLabel;
 public class BookOfIllusions extends MouseAdapter {
 
 	// 1. Make a JFrame variable and initialize it using "new JFrame()"
-JFrame ill=new JFrame();
-JLabel sion;
-JLabel h;
+JFrame magic= new JFrame();
+JLabel ill;
+JLabel illu;
 	public void run() {
 		// 2. make the frame visible
-		ill.setVisible(true);
+		magic.setVisible(true);
 		// 3. set the size of the frame
-		ill.setSize(800, 800);
+		magic.setSize(800, 800);
 		// 4. find 2 images and save them to your project’s default package
+		String app ="apple.png";
+		String apple= "appalecare.png";
 		// 5. make a variable to hold the location of your image. e.g. "illusion.jpg"
-	String a= "yay.jpg";
-	String b="flow.jpg";
-
+		ill= loadImageFromComputer(app);
+		illu= loadImageFromComputer(apple);
 		// 6. create a variable of type "JLabel" but don’t initialize it yet
-		 sion= loadImageFromComputer(a);h= loadImageFromComputer(b);
+		magic.add(ill);
 		// 7. use the "loadImage..." methods below to initialize your JLabel
-		
+		magic.pack();
 		// 8. add your JLabel to the frame
-		ill.add(sion);
+		magic.addMouseListener(this);
 		// 9. call the pack() method on the frame
-		ill.pack();
+		
+		}
+		
 		// 10. add a mouse listener to your frame (hint: use *this*)
-		ill.addMouseListener(this);
-	}
+	
 
 	public void mousePressed(MouseEvent e) {
-	
 		// 11. Print "clicked!" to the console when the mouse is pressed
 		System.out.println("Clicked!");
-		// 12. remove everything from the frame that was added earlier// reaseach on this aspect of coding.
-		// 13. load a new image like before (this is more than one line of code)\
-		
+		// 12. remove everything from the frame that was added earlier
+		magic.remove(ill);
+		// 13. load a new image like before (this is more than one line of code)
+		magic.add(illu);
 		// 14. pack the frame
-		
+		magic.pack();
 	}
 
 	// [OPTIONAL] 15. goad your users with some annoying or witty pop-ups
